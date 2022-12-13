@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-100: 0deg 0% 63%;
+    --color-primary-200: 0deg 0% 0%;
+    --color-primary-300: 0deg 0% 100%;
+    --color-primary-400: 0deg 0% 27%;
+  }
+
+  body {
+    @apply bg-primary-300 font-sans text-sm font-medium;
+  }
+}
