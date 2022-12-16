@@ -29,7 +29,7 @@
     @apply relative;
   }
   .navLink::after {
-    @apply absolute left-0 -bottom-[8px] h-[2px] w-[0%]  bg-primary-200 duration-300 content-[''];
+    @apply absolute left-0 -bottom-2 h-0.5 w-0 bg-primary-200 duration-300 content-[''];
   }
   .navLink:hover::after {
     @apply w-full;
