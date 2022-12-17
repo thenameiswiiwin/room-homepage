@@ -51,7 +51,7 @@ export const Hamburger = () => {
   );
 };
 
-export const Logo = ({ styles }: {styles: string}) => {
+export const Logo = ({ styles }: { styles: string }) => {
   return (
     <svg
       width="62"

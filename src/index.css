@@ -25,6 +25,9 @@
 }
 
 @layer utilities {
+  .nav {
+    @apply flex items-center px-6 py-12;
+  }
   .navLink {
     @apply relative;
   }
