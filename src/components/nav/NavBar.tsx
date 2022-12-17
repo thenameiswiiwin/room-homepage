@@ -7,7 +7,7 @@ const NavBar = () => {
   const handleToggle = () => setIsOpen(!isOpen);
   return (
     <nav>
-      {isOpen ? (
+      {!isOpen ? (
         <NavClosed handleToggle={handleToggle} />
       ) : (
         <NavOpen handleToggle={handleToggle} />

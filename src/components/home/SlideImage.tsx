@@ -12,6 +12,7 @@ const SlideImage = ({
       <img
         src={slides[currentSlide].imgMobile}
         alt={slides[currentSlide].title}
+        className="w-full"
       />
       <div className="absolute bottom-0 right-0">
         <button type="button" onClick={prevSlide} className="sliderBtn">
