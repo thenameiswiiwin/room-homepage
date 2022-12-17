@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        hero: '3.75rem',
+        'hero-top': '3.75rem',
+        'hero-bottom': '4.5rem',
+        'about-top': '3.0625rem',
+        'about-bottom': '2.5625rem',
         'button-mobile-y': '1.225rem',
         'button-mobile-x': '1.4875rem',
         'button-desktop-x': '2.125rem',
@@ -48,6 +51,9 @@ module.exports = {
       gap: {
         'nav-link': '1.9375rem',
         'shop-link': '1.875rem',
+      },
+      spacing: {
+        about: '.9375rem',
       },
       fontFamily: {
         sans: ['League Spartan', ...defaultTheme.fontFamily.sans],
