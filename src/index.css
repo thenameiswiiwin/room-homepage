@@ -37,8 +37,10 @@
   .navLink:hover::after {
     @apply w-full;
   }
-
   .slider {
     @apply w-14 bg-primary-200 px-button-mobile-x py-button-mobile-y lg:w-20 lg:px-button-desktop-x lg:py-7;
+  }
+  .sliderBtn {
+    @apply w-14 bg-primary-200 px-button-mobile-x py-button-mobile-y hover:bg-primary-400 lg:w-20 lg:px-button-desktop-x lg:py-7;
   }
 }

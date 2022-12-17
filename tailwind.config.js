@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       padding: {
+        hero: '3.75rem',
         'button-mobile-y': '1.225rem',
         'button-mobile-x': '1.4875rem',
         'button-desktop-x': '2.125rem',
