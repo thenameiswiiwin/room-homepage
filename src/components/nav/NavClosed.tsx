@@ -1,10 +1,7 @@
+import { NavProps } from '../../types/index';
 import { Hamburger, Logo } from '../icons/icons';
 
-type NavClosedProps = {
-  handleToggle: React.MouseEventHandler<HTMLButtonElement>;
-};
-
-const NavClosed = ({ handleToggle }: NavClosedProps) => {
+const NavClosed = ({ handleToggle }: NavProps) => {
   return (
     <div className="nav">
       <button type="button" onClick={handleToggle}>

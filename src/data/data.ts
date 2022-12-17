@@ -7,6 +7,13 @@ import desktopHero3 from '../assets/images/desktop-image-hero-3.jpg';
 import aboutDark from '../assets/images/image-about-dark.jpg';
 import aboutLight from '../assets/images/image-about-light.jpg';
 
+export const Links = [
+  { name: 'home', path: '/' },
+  { name: 'shop', path: '/shop' },
+  { name: 'about', path: '/about' },
+  { name: 'contact', path: '/contact' },
+];
+
 export const Slides = [
   {
     id: 1,

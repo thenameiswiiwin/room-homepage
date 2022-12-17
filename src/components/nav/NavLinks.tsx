@@ -1,9 +1,4 @@
-const Links = [
-  { name: 'home', path: '/' },
-  { name: 'shop', path: '/shop' },
-  { name: 'about', path: '/about' },
-  { name: 'contact', path: '/contact' },
-];
+import { Links } from '../../data/data';
 
 const NavLinks = () => {
   return (
