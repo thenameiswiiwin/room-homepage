@@ -11,13 +11,13 @@
   }
 
   body {
-    @apply bg-primary-300 font-sans text-base font-medium tracking-body text-primary-100;
+    @apply min-h-screen bg-primary-300 font-sans text-base font-medium tracking-body text-primary-100;
   }
   h1 {
-    @apply text-heading-mobile text-primary-200 lg:text-heading-desktop;
+    @apply text-heading-mobile font-bold text-primary-200 xl:text-heading-desktop;
   }
   h2 {
-    @apply font-bold tracking-subheading-mobile text-primary-200 lg:tracking-subheading-desktop;
+    @apply font-bold tracking-subheading-mobile text-primary-200 xl:tracking-subheading-desktop;
   }
   nav {
     @apply font-semibold leading-nav tracking-nav text-primary-200;
@@ -26,21 +26,18 @@
 
 @layer utilities {
   .nav {
-    @apply flex items-center px-6 py-12;
+    @apply flex items-center px-6 py-12 lg:p-16;
   }
   .navLink {
     @apply relative;
   }
   .navLink::after {
-    @apply absolute left-0 -bottom-2 h-0.5 w-0 bg-primary-200 duration-300 content-[''];
+    @apply absolute left-0 -bottom-2 h-0.5 w-0 bg-primary-200 duration-300 content-[''] lg:bg-primary-300;
   }
   .navLink:hover::after {
     @apply w-full;
   }
-  .slider {
-    @apply w-14 bg-primary-200 px-button-mobile-x py-button-mobile-y lg:w-20 lg:px-button-desktop-x lg:py-7;
-  }
   .sliderBtn {
-    @apply w-14 bg-primary-200 px-button-mobile-x py-button-mobile-y hover:bg-primary-400 lg:w-20 lg:px-button-desktop-x lg:py-7;
+    @apply w-14 bg-primary-200 px-button-mobile-x py-button-mobile-y hover:bg-primary-400 xl:w-20 xl:px-button-desktop-x xl:py-7;
   }
 }

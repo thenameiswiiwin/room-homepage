@@ -9,12 +9,18 @@ const SlideImage = ({
 }: SlideProps) => {
   return (
     <section className="relative">
-      <img
-        src={slides[currentSlide].imgMobile}
-        alt={slides[currentSlide].title}
-        className="w-full"
-      />
-      <div className="absolute bottom-0 right-0">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcSet={slides[currentSlide].imgDesktop}
+        />
+        <img
+          src={slides[currentSlide].imgMobile}
+          alt={slides[currentSlide].title}
+          className="h-full w-full object-cover"
+        />
+      </picture>
+      <div className="absolute bottom-0 right-0 lg:-right-28 xl:-right-40">
         <button type="button" onClick={prevSlide} className="sliderBtn">
           <AngleLeft />
         </button>

@@ -15,14 +15,18 @@ const Hero = () => {
   };
 
   return (
-    <div>
-      <SlideImage
-        currentSlide={currentSlide}
-        slides={Slides}
-        prevSlide={prevSlide}
-        nextSlide={nextSlide}
-      />
-      <SlideArticles currentSlide={currentSlide} slides={Slides} />
+    <div className="lg:grid lg:grid-cols-12 lg:grid-rows-1">
+      <div className="lg:col-span-7">
+        <SlideImage
+          currentSlide={currentSlide}
+          slides={Slides}
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+        />
+      </div>
+      <div className="flex items-center justify-center lg:col-span-5">
+        <SlideArticles currentSlide={currentSlide} slides={Slides} />
+      </div>
     </div>
   );
 };
